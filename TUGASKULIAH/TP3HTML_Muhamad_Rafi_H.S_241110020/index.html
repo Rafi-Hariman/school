@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman beranda website tugas HTML">
+    <meta name="author" content="Muhamad Rafi H.S">
+    <title>Beranda</title>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            margin: 10px auto;
+        }
+
+        ul,
+        ol {
+            display: inline-block;
+            text-align: left;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" title="Halaman Beranda">Beranda</a> |
+        <a href="profil.html" title="Halaman Profil">Profil</a> |
+        <a href="kontak.html" title="Halaman Kontak">Kontak</a>
+    </nav>
+
+    <hr>
+
+    <div>
+        <h1>Heading Level 1 - Judul Utama</h1>
+        <h2>Heading Level 2 - Sub Judul</h2>
+        <h3>Heading Level 3 - Sub Sub Judul</h3>
+        <h4>Heading Level 4 - Sub Sub Sub Judul</h4>
+        <h5>Heading Level 5 - Judul Kecil</h5>
+        <h6>Heading Level 6 - Judul Terkecil</h6>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Paragraf</h2>
+        <p>
+            HTML (Hypertext Markup Language) adalah bahasa markup standar untuk membuat halaman web.
+        </p>
+        <p>
+            HTML memiliki struktur berupa tag, element, atribut, dan komentar.
+            Setiap elemen HTML ditulis menggunakan tag pembuka dan tag penutup.
+        </p>
+        <p>
+            Website ini terdiri dari tiga halaman yang saling terhubung:
+            <a href="index.html" title="Halaman Beranda">Beranda</a>,
+            <a href="profil.html" title="Halaman Profil">Profil</a>, dan
+            <a href="kontak.html" title="Halaman Kontak">Kontak</a>.
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Unordered List (ul)</h2>
+        <ul>
+            <li>HTML - Hypertext Markup Language</li>
+            <li>CSS - Cascading Style Sheets</li>
+            <li>JavaScript - Bahasa Pemrograman Web</li>
+            <li>PHP - Hypertext Preprocessor</li>
+        </ul>
+
+        <h2>Ordered List (ol)</h2>
+        <ol>
+            <li>Belajar HTML dasar</li>
+            <li>Belajar CSS untuk tampilan</li>
+            <li>Belajar JavaScript untuk interaktivitas</li>
+            <li>Belajar framework web</li>
+        </ol>
+
+        <h2>Nested List (List Bersarang)</h2>
+        <ul>
+            <li>Frontend
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Backend
+                <ol>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Node.js</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Gambar (img)</h2>
+
+        <h3>Gambar dengan atribut src, alt, width, height</h3>
+        <img src="assets/gambar.svg" alt="Gambar Contoh 300x200" width="300" height="200">
+
+        <h3>Gambar sebagai hyperlink</h3>
+        <a href="profil.html" title="Pergi ke halaman profil">
+            <img src="assets/foto.svg" alt="Foto Profil - klik untuk ke halaman profil" width="100" height="100">
+        </a>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Hyperlink (a)</h2>
+
+        <h3>Link ke halaman dalam website (internal)</h3>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+
+        <h3>Link ke website luar (eksternal) - target blank</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com" target="_blank" title="Belajar HTML di W3Schools">W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank" title="Referensi HTML di MDN">MDN Web Docs</a>
+            </li>
+        </ul>
+
+        <h3>Link ke email (mailto)</h3>
+        <a href="mailto:241110020@gmail.com" title="Kirim email">241110020@gmail.com</a>
+
+        <h3>Link ke nomor telepon (tel)</h3>
+        <a href="tel:+628123456789" title="Telepon">+62 812 3456 7890</a>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>Dibuat oleh: Muhamad Rafi H.S - 241110020</p>
+        <p>S1 Teknik Informatika, Fakultas Teknologi Industri - Universitas Mercubuana Yogyakarta</p>
+        <p>
+            <a href="index.html">Beranda</a> |
+            <a href="profil.html">Profil</a> |
+            <a href="kontak.html">Kontak</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

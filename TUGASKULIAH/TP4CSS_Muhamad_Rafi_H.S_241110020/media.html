@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman media - Blog Teknologi Web">
+    <meta name="author" content="Muhamad Rafi H.S">
+    <title>Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Media</h1>
+        <p> Muhamad Rafi H.S</p>
+    </div>
+    <nav>
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="artikel.html" class="nav-link">Artikel</a>
+        <a href="media.html" class="nav-link active">Media</a>
+    </nav>
+    <div id="main">
+
+        <hr>
+        <div class="card">
+            <h1>Koleksi Media</h1>
+            <p>Kumpulan video, audio, dan dokumen terkait teknologi web.</p>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <h2>Video</h2>
+            <video src="assets/meme_dog.mp4" width="400" height="250" controls>
+                Browser Anda tidak mendukung tag video.
+            </video>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <h2>Audio</h2>
+            <audio src="assets/mp3_sample.mp3" controls>
+                Browser Anda tidak mendukung tag audio.
+            </audio>
+        </div>
+
+        <hr>
+
+        <div class="card" style="text-align: center;">
+            <h2>Form Komentar</h2>
+            <form action="#" method="post">
+
+            <p>
+                <label for="nama">Nama :</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Nama Anda">
+            </p>
+
+            <p>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" placeholder="Email Anda">
+            </p>
+
+            <p>
+                <label for="topik">Topik :</label><br>
+                <select id="topik" name="topik">
+                    <option value="">-- Pilih Topik --</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Penilaian :</label><br>
+                <input type="radio" id="bagus" name="penilaian" value="bagus">
+                <label for="bagus">Bagus</label>
+                <input type="radio" id="cukup" name="penilaian" value="cukup">
+                <label for="cukup">Cukup</label>
+                <input type="radio" id="kurang" name="penilaian" value="kurang">
+                <label for="kurang">Kurang</label>
+            </p>
+
+            <p>
+                <label for="komentar">Komentar :</label><br>
+                <textarea id="komentar" name="komentar" rows="4" cols="38"
+                    placeholder="Tulis komentar di sini..."></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </p>
+
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <h2>Dokumen PDF</h2>
+            <embed src="assets/kulari.pdf" type="application/pdf" width="500" height="350">
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <h2>Peta Lokasi</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63257.709855965484!2d110.3696594922945!3d-7.725259415121197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599aaf90dabb%3A0x8a6d88bc1cedbed4!2sUniversitas%20Mercu%20Buana%20Yogyakarta%2C%20Kampus%203!5e0!3m2!1sen!2sid!4v1776217879035!5m2!1sen!2sid"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <p>
+                <a href="index.html" class="btn">Ke Beranda</a>
+                <a href="artikel.html" class="btn">Baca Artikel</a>
+            </p>
+        </div>
+
+        <hr>
+
+    </div><!-- /#main -->
+
+    <div id="footer">
+        <p> Muhamad Rafi H.S - 241110020</p>
+        <p>S1 Teknik Informatika, Fakultas Teknologi Industri - Universitas Mercubuana Yogyakarta</p>
+        <p>
+            <a href="index.html">Beranda</a> |
+            <a href="artikel.html">Artikel</a> |
+            <a href="media.html">Media</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

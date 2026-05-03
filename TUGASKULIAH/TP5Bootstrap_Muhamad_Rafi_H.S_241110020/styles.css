@@ -1,0 +1,265 @@
+/* Color Palette */
+:root {
+    --color-dark: #222831;
+    --color-gray: #393E46;
+    --color-accent: #00ADB5;
+    --color-light: #EEEEEE;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--color-dark);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: var(--color-accent) !important;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: var(--color-light) !important;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-accent) !important;
+}
+
+.nav-link.active {
+    color: var(--color-accent) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--color-light);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(238, 238, 238, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 80px 0;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section .text-muted {
+    color: var(--color-light) !important;
+}
+
+.page-header {
+    background-color: var(--color-gray);
+    color: var(--color-light);
+    padding: 40px 0;
+}
+
+.page-header h1,
+.page-header p,
+.page-header .text-muted {
+    color: var(--color-light) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+.btn-primary:hover {
+    background-color: #008c93;
+    border-color: #008c93;
+    color: var(--color-light);
+}
+
+.btn-outline-primary {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+.btn-outline-secondary {
+    color: var(--color-gray);
+    border-color: var(--color-gray);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--color-gray);
+    border-color: var(--color-gray);
+    color: var(--color-light);
+}
+
+.btn-outline-dark {
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+/* Cards */
+.card {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-gray);
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    border-bottom: none;
+}
+
+.card-title {
+    color: var(--color-dark);
+}
+
+.card-text {
+    color: var(--color-gray);
+}
+
+/* Form Styles */
+.form-control {
+    border-color: var(--color-gray);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.form-control:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 0.2rem rgba(0, 173, 181, 0.25);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.form-label {
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+/* Divider */
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-accent);
+    margin-top: 0.5rem;
+}
+
+/* Section Headers */
+h1, h2, h3, h4, h5 {
+    color: var(--color-dark);
+}
+
+.text-muted {
+    color: var(--color-gray) !important;
+}
+
+/* Social Buttons */
+.btn-social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Badges */
+.bg-primary {
+    background-color: var(--color-accent) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-light);
+    border-top: 1px solid var(--color-gray);
+}
+
+footer hr {
+    border-color: var(--color-gray);
+}
+
+/* Icons colors */
+i {
+    color: var(--color-accent);
+}
+
+/* Breadcrumb */
+.breadcrumb-item a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--color-gray);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .page-header {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Smooth Scroll Offset for Navbar */
+section[id] {
+    scroll-margin-top: 70px;
+}

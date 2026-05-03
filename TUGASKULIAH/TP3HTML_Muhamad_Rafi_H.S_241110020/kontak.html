@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman kontak dan media website">
+    <meta name="author" content="Muhamad Rafi H.S">
+    <title>Kontak</title>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            margin: 10px auto;
+        }
+
+        ul,
+        ol {
+            display: inline-block;
+            text-align: left;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        video,
+        audio,
+        iframe,
+        embed {
+            display: block;
+            margin: 10px auto;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <a href="index.html" title="Halaman Beranda">Beranda</a> |
+        <a href="profil.html" title="Halaman Profil">Profil</a> |
+        <a href="kontak.html" title="Halaman Kontak">Kontak</a>
+    </nav>
+
+    <hr>
+
+
+    <div>
+        <h1>Hubungi Saya</h1>
+
+        <h2>Formulir Kontak</h2>
+        <form action="#" method="post">
+
+
+            <p>
+                <label for="nama">Nama :</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+            </p>
+
+
+            <p>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
+            </p>
+
+
+            <p>
+                <label for="password">Password :</label><br>
+                <input type="password" id="password" name="password" placeholder="Masukkan password">
+            </p>
+
+
+            <p>
+                <label for="telepon">Nomor Telepon :</label><br>
+                <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon Anda">
+            </p>
+
+
+            <p>
+                <label for="usia">Usia :</label><br>
+                <input type="number" id="usia" name="usia" min="1" max="100" placeholder="Masukkan usia Anda">
+            </p>
+
+
+            <p>
+                <label for="tanggal">Tanggal Lahir :</label><br>
+                <input type="date" id="tanggal" name="tanggal">
+            </p>
+
+
+            <p>
+                <label>Jenis Kelamin :</label><br>
+                <input type="radio" id="laki" name="jenis_kelamin" value="laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                <label for="perempuan">Perempuan</label>
+            </p>
+
+
+            <p>
+                <label>Topik Pesan :</label><br>
+                <input type="checkbox" id="umum" name="topik" value="umum">
+                <label for="umum">Umum</label>
+                <input type="checkbox" id="teknis" name="topik" value="teknis">
+                <label for="teknis">Teknis</label>
+                <input type="checkbox" id="kerjasama" name="topik" value="kerjasama">
+                <label for="kerjasama">Kerjasama</label>
+            </p>
+
+
+            <p>
+                <label for="file">Upload Lampiran :</label><br>
+                <input type="file" id="file" name="file">
+            </p>
+
+
+            <p>
+                <label for="warna">Warna Favorit :</label><br>
+                <input type="color" id="warna" name="warna" value="#0000ff">
+            </p>
+
+
+            <p>
+                <label for="rating">Rating (1-10) :</label><br>
+                <input type="range" id="rating" name="rating" min="1" max="10">
+            </p>
+
+
+            <p>
+                <label for="prioritas">Prioritas :</label><br>
+                <select id="prioritas" name="prioritas">
+                    <option value="">-- Pilih Prioritas --</option>
+                    <option value="rendah">Rendah</option>
+                    <option value="sedang">Sedang</option>
+                    <option value="tinggi">Tinggi</option>
+                </select>
+            </p>
+
+
+            <p>
+                <label for="pesan">Pesan :</label><br>
+                <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tulis pesan Anda di sini"></textarea>
+            </p>
+
+
+            <p>
+                <input type="submit" value="Kirim Pesan">
+                <input type="reset" value="Reset">
+            </p>
+
+        </form>
+    </div>
+
+    <hr>
+
+
+    <div>
+        <h2>Media</h2>
+
+
+        <h3>Video (MP4)</h3>
+        <video width="400" height="250" controls>
+            <source src="assets/meme_dog.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video. Silakan perbarui browser Anda.
+        </video>
+
+        <br>
+
+
+        <h3>Audio (MP3)</h3>
+        <audio controls>
+            <source src="assets/mp3_sample.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung tag audio. Silakan perbarui browser Anda.
+        </audio>
+
+        <br>
+
+
+        <h3>Dokumen PDF (embed)</h3>
+        <embed src="assets/kulari.pdf" type="application/pdf" width="500" height="350">
+
+        <br>
+
+
+        <h3>Iframe - Peta Lokasi</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63257.709855965484!2d110.3696594922945!3d-7.725259415121197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599aaf90dabb%3A0x8a6d88bc1cedbed4!2sUniversitas%20Mercu%20Buana%20Yogyakarta%2C%20Kampus%203!5e0!3m2!1sen!2sid!4v1776217879035!5m2!1sen!2sid"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+
+        <br>
+
+
+        <h3>Iframe - Halaman Beranda di dalam Iframe</h3>
+        <iframe src="index.html" width="500" height="300" frameborder="1" title="Preview Halaman Beranda">
+        </iframe>
+    </div>
+
+    <hr>
+
+
+    <div>
+        <h2>Informasi Kontak Lainnya</h2>
+        <table border="1">
+            <tr>
+                <th>Media</th>
+                <th>Alamat</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><a href="mailto:241110020@gmail.com">241110020@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Telepon</td>
+                <td><a href="tel:+628123456789">+62 812 3456 7890</a></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Jl. Contoh No. 1, Kota, Provinsi</td>
+            </tr>
+            <tr>
+                <td>GitHub</td>
+                <td><a href="https://github.com" target="_blank" title="GitHub">github.com</a></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <hr>
+
+    <footer>
+        <p>Dibuat oleh: Muhamad Rafi H.S - 241110020</p>
+        <p>S1 Teknik Informatika, Fakultas Teknologi Industri - Universitas Mercubuana Yogyakarta</p>
+        <p>
+            <a href="index.html">Beranda</a> |
+            <a href="profil.html">Profil</a> |
+            <a href="kontak.html">Kontak</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
